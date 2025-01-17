@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--- IMPORT BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">Colo<span>Developer</span></h2>
+
+        <!-- MOBILE SCREEN -->
+         <input type="checkbox" id="menu-toggle">
+         <label for="menu-toggle" class="menu-icon">
+            <i class='bx bx-menu-alt-right'></i>
+            <i class='bx bx-x'></i>
+         </label>
+        <!-- END MOBILE SCREEN -->
+        <ul class="list-menu">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+            <li></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="left">
+            <h2 class="hello-text">Hello, I'm</h2>
+            <h1 class="name-text">ColoDeveloper 👋</h1>
+            <h2 class="role-text">
+                <span>Web Developer</span>
+                <span>App Developer</span>
+                <span>UI Designer</span>
+            </h2>
+
+            <div class="list-button">
+                <button class="download-cv">Download CV</button>
+                <button class="contact-me">Contact Me</button>
+            </div>
+        </div>
+
+        <section class="right">
+            <img class="blob-img" src="blob.png">
+            <img class="avatar-img" src="avatar.png">
+        </section>
+    </main>
+
+    <footer>
+        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        <a href="#"><i class='bx bxl-instagram' ></i></a>
+    </footer>
+    
+</body>
+<script src="script.js"></script>
+</html>

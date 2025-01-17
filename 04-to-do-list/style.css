@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root {
+    --gradient: linear-gradient(
+        120deg,
+        rgba(45, 112, 1253, 0.79) 0%,
+        #163e92 100%
+    );
+    --dark: #001747;
+    --grey: #b1bacb;
+    --grey-border: rgba(210, 210, 210, 0.75);
+    --grey-light: #eeeeee;
+    --grey-dark: #405175;
+    --blue: #2d70fd;
+    --green: #00d8a7;
+    --white: #ffffff;
+    --blue-dark: #2058d1;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: var(--gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#deleteButton {
+    cursor: pointer;
+    transition: 0.25s;
+}
+#deleteButton:hover {
+    color: var(--grey-dark);
+}
+
+
+.btn {
+    color: var(--white);
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--blue);
+    border: none;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.btn:hover {
+    background-color: var(--blue-dark);
+}
+
+.delete-btn {
+    border: none;
+    font-size: 1rem;
+    color: var(--grey);
+    background-color: transparent;
+    cursor: pointer;
+    justify-content: center;
+    margin: auto;
+    transition: 0.25s;
+    text-align: center;
+}
+.delete-btn:hover {
+    color: var(--grey-dark);
+    font-size: 1.15rem;
+    text-shadow: var(--dark) 0px 0px 0.5px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+/* ToDo Container */
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 2rem;
+    background: var(--white);
+    padding: 3.5rem;
+    height: 65%;
+    width: 65%;
+    box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.35);
+    max-width: 30rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    height: 5rem;
+    color: var(--dark);
+    text-align: center;
+    text-shadow: var(--grey) 0px 0px 2px;
+}
+
+.input {
+    position: relative;
+    display: flex;
+}
+
+.input-field {
+    width: 100%;
+    border: 0.06rem solid #d2d2d2bf;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    font-size: 1rem;
+}
+
+input[type="text"]::placeholder {
+    color: var(--grey);
+}
+
+.todo-container {
+    display: flex;
+    gap: 1rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.3rem;
+}
+
+#todoList p {
+    display: flex;
+    gap: 1rem;
+    color: var(--dark);
+    align-items: center;
+}
+
+#todoList .disabled {
+    color: #8f98a8;
+}
+
+
+.disabled {
+    display: flex;
+    text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+    content: "\2714";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 0.06rem solid var(--grey-border);
+    border-radius: 25%;
+    color: transparent;
+}
+
+input[type="checkbox"]:checked::before {
+    color: var(--white);
+    background-color: var(--green);
+    border: 0.06rem solid var(--green);
+    border-radius: 25%;
+}
+
+.counter {
+    border: 0.06rem solid var(--grey-light);
+}
+
+.counter-container {
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--grey);
+}
+
+.counter-container p {
+    align-self: center;
+}
+
+.counter-container button {
+    border: none;
+    background-color: transparent;
+    color: var(--grey);
+    font-size: 1rem;
+}
+
+.socials {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0 50px;
+}
+
+.socials a i {
+    color: var(--grey-dark);
+    margin: 0.5rem;
+    transition: 0.25s;
+}
+
+.socials a i:hover {
+    color: var(--dark);
+    margin-top: -0.8px;
+}
+
+.scroll {
+    height: 25rem;
+    scrollbar-width: thin;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 0.5rem;
+}
+
+
+.scroll::-webkit-scrollbar-track {
+    display: none;
+}

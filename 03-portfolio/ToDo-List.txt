@@ -1,0 +1,7 @@
+ToDo List:
+
+1- Do About, Skills and Contact respective pages
+2- Do a Proyects Page
+3- Do a language button
+4- Dark/Light theme switch
+5- Maybe add more design
